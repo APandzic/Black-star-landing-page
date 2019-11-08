@@ -8,16 +8,36 @@
 //         }
 // }
 
+// let imageTracker = "r";
+// function changeImg() {
+//     let image = document.getElementById('myImg');
+//     if (imageTracker == "r"){
+//         image.src = "/images/another-car.jpg";
+//         imageTracker = "a";
+//     }else {
+//         image.src = "/images/red-car.jpg";
+//         imageTracker = "r";
+//     }
+// }
 
-let imageTracker = "r";
-function changeImg() {
+function changeImg(color) {
     let image = document.getElementById('myImg');
-    if (imageTracker == "r"){
+    
+    if (color == 'red')
+    {
         image.src = "/images/another-car.jpg";
-        imageTracker = "a";
-    }else {
+    } 
+    if (color == 'blue') 
+    {
         image.src = "/images/red-car.jpg";
-        imageTracker = "r";
+    } 
+    if (color == 'green')
+    {
+        image.src = "/images/motorcycle.jpg";
     }
+    if (color == 'yellow') {
+        image.src = "/images/blue-sky.jpg";
+    } 
+
 }
 
