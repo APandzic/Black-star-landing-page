@@ -1,0 +1,7 @@
+a.download {
+    color: black;
+}
+a.download:hover {
+    text-decoration: none ;
+    color: rgb(33,33,33)
+}
