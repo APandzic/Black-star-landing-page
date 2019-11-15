@@ -1,0 +1,5 @@
+.scroll-products {
+    overflow: auto;
+    white-space: nowrap;
+}
+
