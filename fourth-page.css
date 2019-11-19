@@ -1,0 +1,16 @@
+.fourth-page {
+    height:709px;
+    background: linear-gradient(180deg, #030912 0%, #173976 21.88%, #173976 81.77%, #030912 100%);
+}
+
+
+h1, p {
+    color: white;
+}
+
+button {
+    color: white;
+    width: 147px;
+    height: 34px;
+    background: linear-gradient(180deg, #5DFFE0 0%, #00A3FF 100%);
+}
