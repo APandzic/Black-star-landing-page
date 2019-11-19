@@ -32,6 +32,14 @@ form {
     box-sizing: border-box;
 }
 
-::-webkit-input-placeholder{
+.enter-button:hover {
+    cursor: pointer;
+}
+
+::-webkit-input-placeholder{ /*Chrome/Opera/Safari */
+    color: white;
+}
+
+::-moz-placeholder { /* Firefox 19 */
     color: white;
 }
