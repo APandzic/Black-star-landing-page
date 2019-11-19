@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+}
+
+.email-input {
+    background-color:rgb(196,196,196);
+    border: 1px solid black;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.enter-button {
+    background-color: rgb(33,33,33);
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid rgb(33,33,33);
+    padding: 10px;
+    color: white;
+    box-sizing: border-box;
+}
+
+.enter-button:hover {
+    cursor: pointer;
+}
+
+::-webkit-input-placeholder{ /*Chrome/Opera/Safari */
+    color: white;
+}
+
+::-moz-placeholder { /* Firefox 19 */
+    color: white;
+}
