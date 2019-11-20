@@ -23,10 +23,13 @@
     border-radius: 30px;
     object-fit: cover;
     margin: 0 12px;
+   
 
 }
 
 .scroll-products {
-    overflow: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
     white-space: nowrap;
+    -webkit-overflow-scrolling: touch; /* only for ios */
 }
