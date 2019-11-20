@@ -1,0 +1,30 @@
+.third-page {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 208px;
+    background-color: #030912;
+    padding: 0 30px;
+    
+}
+
+.third-page h1{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.22em;
+    margin: 36px 0 24px 0;
+}
+
+.third-page p {
+    color: white;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.25em;
+}
