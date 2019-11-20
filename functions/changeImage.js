@@ -25,18 +25,18 @@ function changeImg(color) {
     
     if (color == 'red')
     {
-        image.src = "/images/another-car.jpg";
+        image.src = "/images/first-page-img.JPG";
     } 
     if (color == 'blue') 
     {
-        image.src = "/images/red-car.jpg";
+        image.src = "/images/watch.jpg";
     } 
     if (color == 'green')
     {
-        image.src = "/images/motorcycle.jpg";
+        image.src = "/images/first-page-img.JPG";
     }
     if (color == 'yellow') {
-        image.src = "/images/blue-sky.jpg";
+        image.src = "/images/watch.jpg";
     } 
 
 }

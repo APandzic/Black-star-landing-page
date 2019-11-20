@@ -12,21 +12,25 @@ body {
 form {
     display: flex;
     flex-direction: row;
+    background: linear-gradient(180deg, #030912 0%, #173976 100%);
 }
 
 .email-input {
-    background-color:rgb(196,196,196);
-    border: 1px solid black;
+    background: linear-gradient(180deg, #030912 0%, #173976 100%);
+    border-top: 1px solid #5DFFE0;
+    border-right: none;
+    border-bottom: 1px solid #00A3FF;
+    border-left: 1px solid #5DFFE0;
     padding: 10px;
     box-sizing: border-box;
 }
 
 .enter-button {
-    background-color: rgb(33,33,33);
-    border-top: 1px solid black;
-    border-right: 1px solid black;
-    border-bottom: 1px solid black;
-    border-left: 1px solid rgb(33,33,33);
+    background: linear-gradient(180deg, #5DFFE0 0%, #00A3FF 100%);
+    border-top: 1px solid #5DFFE0;
+    border-right: none;
+    border-bottom: 1px solid #00A3FF;
+    border-left: none;
     padding: 10px;
     color: white;
     box-sizing: border-box;
