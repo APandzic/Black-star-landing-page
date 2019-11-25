@@ -66,3 +66,7 @@
 .choose-color:nth-child(4n){
     background-color: #FFFFFF
 }
+
+@media only screen and (min-width: 992px){
+    
+}
