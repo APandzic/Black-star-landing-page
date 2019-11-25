@@ -31,5 +31,19 @@
 }
 
 @media only screen and (min-width: 992px){
+    .fifth-page {
+        height: 559px;
+        background: #070707;
+    }
+
+    .fifth-page p {
+        font-size: 20px;
+        line-height: 34px;
+    }
+
+    .fifth-page button {
+        width: 244px;
+        height: 56px;
+    }
     
 }

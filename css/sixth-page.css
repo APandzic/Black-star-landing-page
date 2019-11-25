@@ -1,4 +1,4 @@
-/* accesories */
+/* accessories */
 
 .sixth-page {
     height: 591px;
@@ -36,5 +36,17 @@
 }
 
 @media only screen and (min-width: 992px){
-    
-}
+    .sixth-page {
+        height: 900px;
+        background: linear-gradient(180deg, #030912 0%, #173976 21.88%, #173976 81.77%, #030912 100%);
+    }
+
+    .sixth-page h1{
+        font-size: 48px;
+        line-height: 72px;
+    }
+
+    .scroll-products {
+        overflow: visible;
+        white-space: normal;
+    }
