@@ -47,7 +47,6 @@
     border-radius: 50%;
     margin: 24px 10px;
     cursor: pointer;
-    border: 1px solid #5DFFE0;
 }
 
 .choose-color:nth-child(1n){
@@ -66,6 +65,10 @@
 .choose-color:nth-child(4n){
     background-color: #c4c4c4;
 }
+
+.test_skill {
+    border: 3px solid #5DFFE0;
+  }
 
 @media only screen and (min-width: 992px){
     

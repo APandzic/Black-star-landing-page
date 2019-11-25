@@ -27,3 +27,46 @@ buttons.forEach(button => {
     })
     
 });
+
+
+buttons.forEach(button => {
+    button.addEventListener('click', e =>{
+        let black = document.getElementById("black");
+        let unicorn = document.getElementById("unicorn");
+        let white = document.getElementById("white");
+        let pearl = document.getElementById("pearl");
+        let color = e.currentTarget.dataset.color;
+
+        if (color == 'black')
+        {
+            black.classList.add("test_skill");
+            unicorn.classList.remove("test_skill");
+            white.classList.remove("test_skill");
+            pearl.classList.remove("test_skill");
+        } 
+        if (color == 'unicorn')
+        {
+            unicorn.classList.add("test_skill");
+            black.classList.remove("test_skill");
+            white.classList.remove("test_skill");
+            pearl.classList.remove("test_skill");
+        }
+        if (color == 'white')
+        {
+            white.classList.add("test_skill");
+            black.classList.remove("test_skill");
+            unicorn.classList.remove("test_skill");
+            pearl.classList.remove("test_skill");
+        }
+        if (color == 'pearl')
+        {
+            pearl.classList.add("test_skill");
+            black.classList.remove("test_skill");
+            unicorn.classList.remove("test_skill");
+            white.classList.remove("test_skill");
+        }
+
+        
+    })
+});
+
