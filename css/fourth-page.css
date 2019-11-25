@@ -60,11 +60,11 @@
 }
 
 .choose-color:nth-child(3n){
-    background-color: #c4c4c4
+    background-color: #ffffff;
 }
 
 .choose-color:nth-child(4n){
-    background-color: #FFFFFF
+    background-color: #c4c4c4;
 }
 
 @media only screen and (min-width: 992px){
