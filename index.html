@@ -19,18 +19,27 @@
 <body>
     <header></header>
 
-    <section class="first-page">
+    <section class="first-page first-page-image">
         <input type="checkbox" id="overlay-input" />
         <label for="overlay-input" id="overlay-button"><span></span></label>
           <div id="overlay">
             <ul>
               <li><a href="#">About us</a><div class="Solid-dash-line"></div></li>
-              <li><a href="#bikes">Bikes</a><div class="Solid-dash-line"></div></li>
+              <li><a href="#details">Details</a><div class="Solid-dash-line"></div></li>
               <li><a href="#cars">Cars</a><div class="Solid-dash-line"></div></li>
-              <li><a href="#sixth-page">Accessories</a><div class="Solid-dash-line"></div></li>
-              <li><a href="#footer">Contact</a><div class="Solid-dash-line"></div></li>
+              <li><a href="#accessories">Accessories</a><div class="Solid-dash-line"></div></li>
+              <li><a href="#contact">Contact</a><div class="Solid-dash-line"></div></li>
             </ul>
           </div>
+
+          <nav class="desktop-nav">
+              <ul>
+                  <li><a href="#details">Details</a></li>
+                  <li><a href="#cars">Configure</a></li>
+                  <li><a href="#accessories">Accessories</a></li>
+                  <li><a href="#contact">Contact</a></li>
+              </ul>
+          </nav>
 
           <img class="first-page-logo-img" src="/images/newlogo.png" alt="logo">
           <div class="first-page-container-paragraf">
@@ -41,11 +50,9 @@
               <input type="text"placeholder="Fill in your email" name="email" class="email-input">
               <button type="submit" class="enter-button">ENTER</button>
           </form>
-
-        <img class="first-page-background-img" src="/images/testfirstpagebackground.jpg" alt="motorbike" loading="lazy">
     </section>
     
-    <section class="second-page">
+    <section class="second-page" id="details">
         <img class="second-page-first-img" src="images/secondpage.JPG" alt="motorbike">
         <img class="second-page-second-img" src="images/secondpage2.JPG" alt="motorbike">
     </section>
@@ -72,7 +79,7 @@
         <button><a class= "download" download href="images/Google.jpg">LEARN MORE</a></button>
     </section>
 
-    <section class="sixth-page">
+    <section class="sixth-page" id="accessories">
         <h1>Accessories</h1>
         <div class= "scroll-products">
             <img class="products" src="images/bag.jpg" alt="watch">
@@ -81,7 +88,7 @@
         </div>  
     </section>
     
-    <footer>
+    <footer id="contact">
         <h2>Contact us</h2>
         <p>(603) 555-0123</p>
         <p>2464 Royal Ln undefined</p>
