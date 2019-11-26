@@ -248,7 +248,7 @@ input[type=checkbox]:checked ~ #overlay-button span:after {
 @media only screen and (min-width: 992px){
     .first-page{
         margin-bottom: -1px;
-        height: 900px;
+        height: 100vh;
     }
     #overlay-button{
         display: none;
