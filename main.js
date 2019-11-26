@@ -4,24 +4,43 @@ const buttons = document.querySelectorAll('.button-choose-color');
 
 buttons.forEach(button => {
     button.addEventListener('click', e =>{
-        let image = document.getElementById('myImg');
+        let imageMobile = document.getElementById('my-img-mobile');
+        let imageDesktop = document.getElementById('my-img-desktop');
         let color = e.currentTarget.dataset.color;
 
         if (color == 'black')
         {
-            image.src = "images/oldsmobile-black.jpg";
+            if(window.innerWidth < 992){
+                imageMobile.src = "images/imgOnBikesDiffrentColor/oldsmobile-black.jpg";
+            } else{
+                imageDesktop.src = "images/imgOnBikesDiffrentColor/oldsmobile-black-desktop.jpg";
+            }
         } 
         if (color == 'unicorn')
         {
-            image.src = "images/electric-unicorn.jpg";
+            if(window.innerWidth < 992){
+                imageMobile.src = "images/imgOnBikesDiffrentColor/electric-unicorn.jpg";
+            } else{
+                imageDesktop.src = "images/imgOnBikesDiffrentColor/electric-unicorn-desktop.jpg";
+            }
+           
         }
         if (color == 'white')
         {
-            image.src = "/images/neon-white.jpg";
+            if(window.innerWidth < 992){
+                imageMobile.src = "/images/imgOnBikesDiffrentColor/neon-white.jpg";
+            } else{
+                imageDesktop.src = "/images/imgOnBikesDiffrentColor/neon-white-desktop.jpg";
+            }
         }
         if (color == 'pearl')
         {
-            image.src = "/images/night-pearl.jpg";
+            if(window.innerWidth < 992){
+                imageMobile.src = "/images/imgOnBikesDiffrentColor/night-pearl.jpg";
+            } else{
+                imageDesktop.src = "/images/imgOnBikesDiffrentColor/night-pearl-desktop.jpg";
+            }
+            
         }
 
     })

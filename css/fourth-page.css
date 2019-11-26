@@ -70,6 +70,88 @@
     border: 3px solid #5DFFE0;
   }
 
+.img-desktop{
+    display: none;
+}
+
+
 @media only screen and (min-width: 992px){
     
+    .img-desktop{
+        display: block;
+    }
+
+    .img-mobile{
+        overflow: hidden;
+        display: none;
+    }
+
+    .fourth-page {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height:992px;
+        background: linear-gradient(180deg, #030912 0%, #173976 21.88%, #173976 81.77%, #030912 100%);
+        padding: 0;
+        margin-bottom: -1px;
+    }
+    
+    .contain-color-buttons {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        left: 33%;
+        margin-top: 840px;
+    }
+    
+    .fourth-page h1{
+        position: absolute;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 72px;
+        left: 38%;
+        margin-top: 153px;
+    }
+    
+    .fourth-page p {
+        display: none;
+    }
+    
+    .fourth-page img {
+        object-fit: cover;
+        width: 100%;
+        height: 992px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 0px;
+    }    
+    
+    .choose-color {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        margin: 24px 38px;
+        cursor: pointer;
+    }
+    
+    .choose-color:nth-child(1n){
+        background-color: black;
+    }
+    
+    .choose-color:nth-child(2n){
+        background-color: #957DEE;
+    
+    }
+    
+    .choose-color:nth-child(3n){
+        background-color: #ffffff;
+    }
+    
+    .choose-color:nth-child(4n){
+        background-color: #c4c4c4;
+    }
+    
+    .test_skill {
+        border: 4px solid #5DFFE0;
+      }
 }
