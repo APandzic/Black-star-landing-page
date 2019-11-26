@@ -18,8 +18,16 @@
     left: 10vw;
 }
 
+/* desktop logo and language options display none */
 .desktop-logo {
     display: none;
+}
+
+.language-box {
+    display: none;
+    width: 166px;
+    height: 104px;
+    background-color: rgba(0, 0, 0, 0.65);
 }
 
 /* first page header */
@@ -68,6 +76,7 @@ form {
     font-size: 12px;
     line-height: 18px;
     letter-spacing: 0.195em;
+    color: white;
 }
 
 .enter-button {
@@ -215,19 +224,21 @@ input[type=checkbox]:checked ~ #overlay-button span:after {
 }
 #overlay ul li a {
     position: absolute;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 7px;
+    padding-right: 7px;
     background-color: #000000;
     color: white;
     text-decoration: none;
     font-size: 1.5em;
+    text-transform: uppercase;
 }
 #overlay ul li a:hover {
     color: #333332;
 }
 
 .Solid-dash-line {
-    margin-left: 10px; 
+    margin-left: 30px; 
+    margin-right: 30px;
     background: linear-gradient(180deg, #5DFFE0 0%, #00A3FF 100%);
     height: 1px;
     width: 100%;
@@ -245,6 +256,8 @@ input[type=checkbox]:checked ~ #overlay-button span:after {
     .desktop-nav{
         display: flex;
         position: fixed;
+        background: rgba(0, 0, 0, 0.65);
+        width: 100%;
     }
     
     .desktop-nav ul {
@@ -279,7 +292,7 @@ input[type=checkbox]:checked ~ #overlay-button span:after {
     }
 
     .first-page-image {
-        background: url("/images/finish-1.jpg"),linear-gradient(270deg, rgba(0, 0, 0, 0) 32.95%, #000000 74.17%);
+        background: url("/images/finish-2.jpg"),linear-gradient(270deg, rgba(0, 0, 0, 0) 32.95%, #000000 74.17%);
         background-repeat: no-repeat;
         background-blend-mode: overlay;
         background-size: cover;
@@ -290,13 +303,33 @@ input[type=checkbox]:checked ~ #overlay-button span:after {
     }
 
     .desktop-logo{
+        display: block;
         position: absolute;
+        bottom: 0;
+        margin-bottom: 590px;
+        left: 72px;
+    }
 
+    li.language-logo {
+        align-self: flex-end;
+    }
+
+    .language-box{
+        display: none;
+    }
+
+    .language-logo:hover + .language-box {
+        display: flex;
+        cursor: pointer;
     }
     
     /* first page header */
     
     .first-page-container-paragraf{
+        display:none;
+    }
+
+    .first-page-container-paragraf-desktop {
         position: absolute;
         bottom: 409px;
         margin: 0;
@@ -306,7 +339,7 @@ input[type=checkbox]:checked ~ #overlay-button span:after {
     
     /* form on first page */
     
-    .first-page-container-paragraf p{
+    .first-page-container-paragraf-desktop p{
         color: #ffffff;
         font-weight: 500;
         font-size: 20px;
