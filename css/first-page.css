@@ -23,13 +23,6 @@
     display: none;
 }
 
-.language-box {
-    display: none;
-    width: 166px;
-    height: 104px;
-    background-color: rgba(0, 0, 0, 0.65);
-}
-
 /* first page header */
 
 .first-page-container-paragraf{
@@ -76,7 +69,8 @@ form {
     font-size: 12px;
     line-height: 18px;
     letter-spacing: 0.195em;
-    color: white;
+    color: #FFFFFF;
+    border-radius: 4px 0 0 4px
 }
 
 .enter-button {
@@ -86,7 +80,7 @@ form {
     border-bottom: 1px solid #00A3FF;
     border-left: none;
     padding: 10px;
-    color: white;
+    color: #FFFFFF;
     width: 30%;  /* fill 30% of the form */
     box-sizing: border-box;
      /* text in button */
@@ -94,18 +88,25 @@ form {
     font-size: 12px;
     line-height: 18px;
     letter-spacing: 0.195em;
+    border-radius: 0 4px 4px 0;
 }
 
 .enter-button:hover {
     cursor: pointer;
+    background:linear-gradient(180deg, #49FFDC 0%, #48BDFF 100%);
+}
+
+.enter-button:active {
+    background: linear-gradient(180deg, #2DE6C2 0%, #36A4E1 100%);
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.31), inset 0px -2px 4px rgba(255, 255, 255, 0.25);
 }
 
 ::-webkit-input-placeholder{ /*Chrome/Opera/Safari */
-    color: white;
+    color: #FFFFFF;
 }
 
 ::-moz-placeholder { /* Firefox 19 */
-    color: white;
+    color: #FFFFFF;
 }
 
 /* first page background-img */
@@ -153,7 +154,7 @@ form {
     height: 2px;
     width: 35px;
     border-radius: 2px;
-    background-color: white;
+    background-color: #FFFFFF;
     position: relative;
     display: block;
     transition: all 0.2s ease-in-out;
@@ -169,7 +170,7 @@ form {
     height: 2px;
     width: 35px;
     border-radius: 2px;
-    background-color: white;
+    background-color: #FFFFFF;
     position: absolute;
     content: "";
     transition: all 0.2s ease-in-out;
@@ -227,7 +228,7 @@ input[type=checkbox]:checked ~ #overlay-button span:after {
     padding-left: 7px;
     padding-right: 7px;
     background-color: #000000;
-    color: white;
+    color: #FFFFFF;
     text-decoration: none;
     font-size: 1.5em;
     text-transform: uppercase;
@@ -275,8 +276,6 @@ input[type=checkbox]:checked ~ #overlay-button span:after {
 
     .desktop-nav ul li a {
         color: #FFFFFF;
-        font-family: Poppins;
-        font-style: normal;
         font-weight: 600;
         font-size: 24px;
         line-height: 36px;
@@ -303,24 +302,41 @@ input[type=checkbox]:checked ~ #overlay-button span:after {
     }
 
     .desktop-logo{
-        display: block;
+        display: flex;
         position: absolute;
         bottom: 0;
         margin-bottom: 590px;
         left: 72px;
     }
 
-    li.language-logo {
-        align-self: flex-end;
+    .desktop-nav li:nth-child(5) {
+        margin-left: 400px;
     }
-
-    .language-box{
+    
+    .language-box {
         display: none;
+        position: absolute;
+        right: 0;
+        margin-right: 100px;
+        width: 166px;
+        height: 104px;
+        background-color: rgba(0, 0, 0, 0.65);
+        color: #FFFFFF;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+    } 
+    
+    .choosen-language{
+        color:#5DFFE1;
     }
 
-    .language-logo:hover + .language-box {
+    .desktop-nav li:nth-child(5):hover + .language-box{
         display: flex;
-        cursor: pointer;
+        border: 1px solid red;
     }
     
     /* first page header */

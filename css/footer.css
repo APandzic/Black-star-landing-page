@@ -4,11 +4,10 @@ footer {
     align-items: center;
     height: 306px;
     background: #030912;
-    color: white;
+    color: #FFFFFF;
 }
 
 footer h2 {
-    font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 27px;
@@ -17,7 +16,6 @@ footer h2 {
 }
 
 footer p {
-    font-style: normal;
     font-weight: 500;
     font-size: 12px;
     line-height: 20px;
@@ -29,7 +27,7 @@ footer p {
     footer {
         height: 478px;
         background: #070707;
-        color: white;
+        color: #FFFFFF;
     }
     
     footer h2 {
