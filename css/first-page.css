@@ -9,7 +9,6 @@
     height: 100vh;
     animation: bugfix infinite 1s;
     -webkit-animation: bugfix infinite 1s;
-    margin-bottom: -1px;
 }
 
 .first-page-logo-img{
@@ -17,6 +16,10 @@
     bottom: 0;
     margin-bottom: 70%;
     left: 10vw;
+}
+
+.desktop-logo {
+    display: none;
 }
 
 /* first page header */
@@ -232,7 +235,6 @@ input[type=checkbox]:checked ~ #overlay-button span:after {
 
 @media only screen and (min-width: 992px){
     .first-page{
-        position: inherit;
         margin-bottom: -1px;
         height: 900px;
     }
@@ -244,13 +246,19 @@ input[type=checkbox]:checked ~ #overlay-button span:after {
         display: flex;
         position: fixed;
     }
-
+    
     .desktop-nav ul {
         display: flex;
         flex-direction: row;
         list-style: none;
         margin-top: 16px;
+        margin-left: 72px;
+
     }
+
+    ul { 
+        padding:0 
+    } 
 
     .desktop-nav ul li a {
         color: #FFFFFF;
@@ -267,7 +275,7 @@ input[type=checkbox]:checked ~ #overlay-button span:after {
     }
 
     .desktop-nav ul li a:hover{
-        color:#5DFFE0;
+        color:#5DFFE1;
     }
 
     .first-page-image {
@@ -277,22 +285,23 @@ input[type=checkbox]:checked ~ #overlay-button span:after {
         background-size: cover;
     }
 
-
     .first-page-logo-img{
+        display: none;
+    }
+
+    .desktop-logo{
         position: absolute;
-        bottom: 0;
-        margin: 0;
-        left: 10vw;
+
     }
     
     /* first page header */
     
     .first-page-container-paragraf{
         position: absolute;
-        bottom: 0;
+        bottom: 409px;
         margin: 0;
-        width: 280px;
-        left: 10vw;
+        width: 506px;
+        left: 72px;
     }
     
     /* form on first page */
@@ -300,8 +309,8 @@ input[type=checkbox]:checked ~ #overlay-button span:after {
     .first-page-container-paragraf p{
         color: #ffffff;
         font-weight: 500;
-        font-size: 16px;
-        line-height: 24px;
+        font-size: 20px;
+        line-height: 30px;
         letter-spacing: 0.195em;
     }
     
@@ -309,9 +318,9 @@ input[type=checkbox]:checked ~ #overlay-button span:after {
     
     form {
         position: absolute;
-        bottom: 0; /*Enables you to place the element at the end of the first page*/
-        width: 506px; /* gives it a width of 80% */
-        left: 10vw; /*Position the element 10% from the left side*/
+        bottom: 320px; /*Enables you to place the element at the end of the first page*/
+        width: 506px; 
+        left: 72px; /*Position the element 10% from the left side*/
         margin: 0;
         display: flex;
         flex-direction: row;
@@ -319,50 +328,16 @@ input[type=checkbox]:checked ~ #overlay-button span:after {
     }
     
     .email-input {
-        background: linear-gradient(180deg, #030912 0%, #173976 100%);
-        border-top: 1px solid #5DFFE0;
-        border-right: none;
-        border-bottom: 1px solid #00A3FF;
-        border-left: 1px solid #5DFFE0;
-        padding: 10px;
-        width: 50%; /* fill 70% of the form */
-        box-sizing: border-box;
         /* text in input*/
-        font-size: 12px;
-        line-height: 18px;
-        letter-spacing: 0.195em;
-        color: white;
+        font-size: 20px;
+        line-height: 30px;
     }
     
     .enter-button {
-        background: linear-gradient(180deg, #5DFFE0 0%, #00A3FF 100%);
-        border-top: 1px solid #5DFFE0;
-        border-right: none;
-        border-bottom: 1px solid #00A3FF;
-        border-left: none;
-        padding: 10px;
-        color: white;
-        width: 30%;  /* fill 30% of the form */
-        box-sizing: border-box;
          /* text in button */
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 18px;
-        letter-spacing: 0.195em;
+        font-size: 20px;
+        line-height: 30px;
     }
-    
-    .enter-button:hover {
-        cursor: pointer;
-    }
-    
-    ::-webkit-input-placeholder{ /*Chrome/Opera/Safari */
-        color: white;
-    }
-    
-    ::-moz-placeholder { /* Firefox 19 */
-        color: white;
-    }
-
 }    
 
 
