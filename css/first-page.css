@@ -24,7 +24,6 @@
 }
 
 /* first page header */
-
 .first-page-container-paragraf{
     position: absolute;
     bottom: 0;
@@ -248,12 +247,13 @@ input[type=checkbox]:checked ~ #overlay-button span:after {
 @media only screen and (min-width: 992px){
     .first-page{
         margin-bottom: -1px;
-        height: 100vh;
+        height: 900px;
     }
     #overlay-button{
         display: none;
     }
 
+    /* Desktop navbar container */
     .desktop-nav{
         display: flex;
         position: fixed;
@@ -265,9 +265,8 @@ input[type=checkbox]:checked ~ #overlay-button span:after {
         display: flex;
         flex-direction: row;
         list-style: none;
-        margin-top: 16px;
-        margin-left: 72px;
-
+        padding-top: 16px;
+        padding-left: 72px;
     }
 
     ul { 
@@ -290,6 +289,47 @@ input[type=checkbox]:checked ~ #overlay-button span:after {
         color:#5DFFE1;
     }
 
+    /* The dropdown container */
+    .dropdown {
+        overflow: hidden;
+        margin-left: 380px;
+    }
+  
+    /* Dropdown button */
+    .dropdown .dropbtn {
+        font-size: 16px;
+    }
+  
+    /* Dropdown content (hidden by default) */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        right: 0px;
+        background-color: rgba(0, 0, 0, 0.65);
+        z-index: 1;
+        width: 166px;
+        height: 104px;
+    }
+    
+    /* Links inside the dropdown */
+    .dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .dropdown-content .choosen-language {
+        color:#5DFFE1;
+    }
+  
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+        display: block;
+        }
+
     .first-page-image {
         background: url("/images/finish-2.jpg"),linear-gradient(270deg, rgba(0, 0, 0, 0) 32.95%, #000000 74.17%);
         background-repeat: no-repeat;
@@ -308,39 +348,8 @@ input[type=checkbox]:checked ~ #overlay-button span:after {
         margin-bottom: 590px;
         left: 72px;
     }
-
-    .desktop-nav li:nth-child(5) {
-        margin-left: 400px;
-    }
-    
-    .language-box {
-        display: none;
-        position: absolute;
-        right: 0;
-        margin-right: 100px;
-        width: 166px;
-        height: 104px;
-        background-color: rgba(0, 0, 0, 0.65);
-        color: #FFFFFF;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 24px;
-        text-align: center;
-        letter-spacing: -0.02em;
-        text-transform: uppercase;
-    } 
-    
-    .choosen-language{
-        color:#5DFFE1;
-    }
-
-    .desktop-nav li:nth-child(5):hover + .language-box{
-        display: flex;
-        border: 1px solid red;
-    }
-    
-    /* first page header */
-    
+   
+    /* first page header mobile */
     .first-page-container-paragraf{
         display:none;
     }
@@ -353,9 +362,9 @@ input[type=checkbox]:checked ~ #overlay-button span:after {
         left: 72px;
     }
     
-    /* form on first page */
     
     .first-page-container-paragraf-desktop p{
+        /* paragraph text desktop */
         color: #ffffff;
         font-weight: 500;
         font-size: 20px;
@@ -364,7 +373,6 @@ input[type=checkbox]:checked ~ #overlay-button span:after {
     }
     
     /* form on first page */
-    
     form {
         position: absolute;
         bottom: 320px; /*Enables you to place the element at the end of the first page*/

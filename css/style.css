@@ -3,6 +3,11 @@
 * {
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
+    font-family: 'AktivGrotesk' ;
+    font-style: medium;
+}
+
+@font-face {
+    font-family: "AktivGrotesk";
+    src: url("/Aktiv_Grotesk/AktivGrotesk-Medium.otf");
 }
