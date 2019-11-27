@@ -71,3 +71,11 @@ navigationLinks.forEach(item => {
     })
 }); 
 
+
+const julie = document.getElementById('julie');
+// julie.scrollIntoView(true);
+julie.scrollIntoView({
+    block: 'center',
+    inline: 'center'
+  });
+
