@@ -292,7 +292,7 @@ input[type=checkbox]:checked ~ #overlay-button span:after {
     /* The dropdown container */
     .dropdown {
         overflow: hidden;
-        margin-left: 380px;
+        margin-left: 550px;
     }
   
     /* Dropdown button */
