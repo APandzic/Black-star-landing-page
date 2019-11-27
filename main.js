@@ -52,12 +52,22 @@ buttons.forEach(button => {
         const colors = document.querySelectorAll('.choose-color');
 
         colors.forEach((color) => {
-            color.classList.remove('test_skill');
+            color.classList.remove('add-border');
             
         })
         
-        e.currentTarget.classList.add("test_skill"); 
+        e.currentTarget.classList.add("add-border"); 
 
     })
 });
+
+const navigationLinks = document.querySelectorAll(".press-link");
+let checkbox = document.getElementById("overlay-input");
+
+navigationLinks.forEach(item => {
+    item.addEventListener('click', () =>{
+        console.log(item);
+        checkbox.checked = false;
+    })
+}); 
 
