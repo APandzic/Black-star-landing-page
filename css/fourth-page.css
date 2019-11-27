@@ -101,7 +101,7 @@
         flex-direction: row;
         align-items: center;
         left: 33%;
-        margin-top: 840px;
+        margin-top: 790px;
     }
     
     .fourth-page h1{
@@ -109,8 +109,8 @@
         font-weight: 600;
         font-size: 48px;
         line-height: 72px;
-        left: 38%;
-        margin-top: 153px;
+        left: 35%;
+        margin-top: 176px;
     }
     
     .fourth-page p {
@@ -129,7 +129,7 @@
         width: 64px;
         height: 64px;
         border-radius: 50%;
-        margin: 24px 38px;
+        margin: 24px 24px;
         cursor: pointer;
     }
     
