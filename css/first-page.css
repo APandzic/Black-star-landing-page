@@ -386,8 +386,8 @@ input[type=checkbox]:checked ~ #overlay-button span:after {
     
     .email-input {
         /* text in input*/
-        font-size: 20px;
-        line-height: 30px;
+        font-size: 17px;
+        line-height: 20px;
     }
     
     .enter-button {
