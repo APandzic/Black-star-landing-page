@@ -28,9 +28,7 @@
     text-align: center;
     letter-spacing: 0.25em;
 }
-.third-text-desktop{
-    display: none;
-}
+
 
 @media only screen and (min-width: 992px){
     .third-page {
@@ -48,13 +46,5 @@
         font-size: 20px;
         line-height: 34px;
         margin: 0 340px;
-    }
-    
-    .third-text-desktop{
-        display: block;
-    }
-
-    .third-text-mobile{
-        display:none;
     }
 }

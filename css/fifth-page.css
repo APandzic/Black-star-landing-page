@@ -21,17 +21,9 @@
     text-align: center;
     letter-spacing: 0.25em;
     margin: 56px 0 24px 0;
+    
 }
 
-.fifth-page a {
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 18px;
-    letter-spacing: 0.195em;
-    text-decoration: none;
-    text-align: center;
-    color: #FFFFFF;
-}
 
 .fifth-page button {
     color: #FFFFFF;
@@ -52,6 +44,17 @@
 .fifth-page button:active {
     background: linear-gradient(180deg, #2DE6C2 0%, #36A4E1 100%);
     box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.31), inset 0px -2px 4px rgba(255, 255, 255, 0.25);
+}
+
+.fifth-page a {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.195em;
+    text-decoration: none;
+    color: #FFFFFF;
+    text-align: center;
+    vertical-align: middle;
 }
 
 @media only screen and (min-width: 992px){
