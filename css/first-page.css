@@ -296,9 +296,9 @@ input[type=checkbox]:checked ~ #overlay-button span:after {
 
     .desktop-nav ul li a {
         color: #FFFFFF;
-        font-weight: 600;
-        font-size: 20px;
-        line-height: 23px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
         letter-spacing: 0.22em;
         text-transform: uppercase;
         text-decoration: none;
@@ -313,12 +313,13 @@ input[type=checkbox]:checked ~ #overlay-button span:after {
     /* The dropdown container */
     .dropdown {
         overflow: hidden;
-        margin-left: 500px;
+        margin-left: 600px;
     }
   
     /* Dropdown button */
     .dropdown .dropbtn {
         font-size: 16px;
+        line-height: 19px;
     }
   
     /* Dropdown content (hidden by default) */
@@ -390,7 +391,7 @@ input[type=checkbox]:checked ~ #overlay-button span:after {
         font-weight: 500;
         font-size: 20px;
         line-height: 30px;
-        letter-spacing: 0.195em;
+        letter-spacing: 0.15em;
     }
     
     /* form on first page */
@@ -407,16 +408,17 @@ input[type=checkbox]:checked ~ #overlay-button span:after {
     
     .email-input {
         /* text in input*/
-        font-size: 17px;
-        line-height: 20px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
     }
     
     .enter-button {
          /* text in button */
-        font-size: 20px;
-        line-height: 30px;
+         font-weight: 500;
+         font-size: 16px;
+         line-height: 19px;
+         text-align: center;
+         vertical-align: middle;
     }
 }    
-
-
-

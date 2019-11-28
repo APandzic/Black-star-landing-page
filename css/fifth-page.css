@@ -66,17 +66,20 @@
     .fifth-page h3 {
         display: block;
         margin-top: 73px;
-        font-weight: 600;
-        font-size: 47px;
-        line-height: 72px;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 38px;
+        letter-spacing: 0.22em;
         text-align: center;
         letter-spacing: 0.22em;
         color: #FFFFFF;
     }
 
     .fifth-page p {
-        font-size: 20px;
-        line-height: 34px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 27px;
+        letter-spacing: 0.25em;
         width: 500px;
     }
 

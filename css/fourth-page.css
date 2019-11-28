@@ -101,17 +101,17 @@
         flex-direction: row;
         align-items: center;
         left: 33%;
-        margin-top: 790px;
+        margin: 790px auto 0 auto;
         z-index: 1;
     }
     
     .fourth-page h1{
         position: absolute;
-        font-weight: 600;
-        font-size: 48px;
-        line-height: 72px;
-        left: 35%;
-        margin-top: 176px;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 38px;
+        letter-spacing: 0.22em;
+        margin: 176px auto 0 auto;
     }
     
     .fourth-page p {
