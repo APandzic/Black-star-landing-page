@@ -1,5 +1,8 @@
 /* camelCase */
 
+
+/* changes image on fourt page*/ 
+
 const buttons = document.querySelectorAll('.button-choose-color'); 
 
 buttons.forEach(button => {
@@ -47,6 +50,8 @@ buttons.forEach(button => {
     
 });
 
+/* adds border on buttons on fourt page */ 
+
 buttons.forEach(button => {
     button.addEventListener('click', e =>{
         const colors = document.querySelectorAll('.choose-color');
@@ -68,8 +73,25 @@ navigationLinks.forEach(item => {
     item.addEventListener('click', () =>{
         console.log(item);
         checkbox.checked = false;
+        document.querySelector("body").style.overflow = "visible"; // checkbox.addEventListener bug fix
     })
 }); 
+
+/* stops the navigation bar from scrolling */ 
+
+checkbox.addEventListener('change', () =>{
+
+    if (document.getElementById("overlay-input").checked == true) 
+    {
+        document.querySelector('body').style.overflow = "hidden";
+    } 
+
+   if (document.getElementById("overlay-input").checked == false)
+    {
+        document.querySelector("body").style.overflow = "visible";
+    }
+});
+
 
 /* 
 const julie = document.getElementById('julie');
@@ -79,3 +101,5 @@ julie.scrollIntoView({
   });
 
  */
+
+
